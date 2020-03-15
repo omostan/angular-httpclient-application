@@ -25,7 +25,7 @@ export class StudentListComponent implements OnInit {
     });
   }
 
-  delete(item) {
+  delete(item: any) {
     // Delete item in the student data
     const del = item;
     this.apiService.deleteItem(item.id).subscribe(response => {
